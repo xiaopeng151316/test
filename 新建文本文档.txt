@@ -1,0 +1,14 @@
+这个问题可能是因为tomcat的jre和你项目使用的不一致导致的。
+
+
+然后jdk和jre都是8，在启动tomcat的时候报错了，随后我更改了server的jre版本，换成了jre7，然后就能正常运行了，如果你是Eclipse（或者MyEclipse）的话，那你可能也要更新下Eclipse或者Tomcat的较高版本，或者降低jdk或jre的版本
+
+谢谢！版本的问题。我的jdk1.8 ，tomcat7 时，报出这个异常信息。  后来换成jdk1.8 ,tomcat8 启动成功了
+
+
+
+第一种情况可能是你的tomcat的jre和项目的不一致导致的
+
+第二种：可能是tomcat 中jre 版本过低，项目jre过高，也会报这个错误。我们就下载高版本的tomcat重新加载服务器即可。
+
+
